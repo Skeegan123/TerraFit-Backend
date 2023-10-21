@@ -1,0 +1,8 @@
+# gitignore
+
+# Basic
+.DS_Store
+.env
+node_modules
+
+terrafit-firebase-adminsdk-nmd0g-1cc4e32751.json
