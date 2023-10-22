@@ -2,6 +2,7 @@ import express from 'express';
 import './config/database';
 import errorHandler from './middlewares/errorHandler';
 import logger from './middlewares/logger';
+import cors from 'cors';
 
 import userRoutes from './routes/userRoutes';
 import workoutRoutes from './routes/workoutRoutes';
@@ -11,6 +12,7 @@ const app = express();
 const port = 3000;
 app.use(express.json());
 
+app.use(cors());
 app.use(logger); // Log each request
 
 // Routes

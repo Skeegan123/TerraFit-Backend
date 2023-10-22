@@ -1,6 +1,6 @@
 export interface Workout {
     workout_id: string;
-    user_id: string;
+    user_id: number;
     workoutTitle: string;
     estimatedTime: string;
     requiredEquipment: string[];
